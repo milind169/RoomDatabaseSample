@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="student"
+            type="com.milind.student.model.StudentModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView_items_notes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            app:cardBackgroundColor="@color/colorcardview"
+            app:cardCornerRadius="@dimen/_8sdp"
+            app:cardElevation="@dimen/_2sdp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/open_sans_bold"
+                        android:text="@{student.name}"
+                        android:textColor="@color/colortextsecond"
+                        android:textSize="@dimen/_16sdp"
+                        android:textStyle="bold"
+                        tools:text="Title" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvStream"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:text=""
+                    android:textColor="@color/colortextsecond"
+                    android:textSize="@dimen/_11sdp"
+                    android:visibility="gone"
+                    tools:text="06 Jun 2021" />
+
+                <TextView
+                    android:id="@+id/tvFeedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:maxHeight="170dp"
+                    android:maxLines="5"
+                    android:text="@{student.feedback}"
+                    android:textColor="@color/colortextsecond"
+                    android:textSize="16sp"
+                    tools:text="Body" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</layout>

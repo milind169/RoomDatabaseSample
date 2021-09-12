@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Student List</string>
+    <string name="type_name">Student Name</string>
+    <string name="type_something">Student Feedback</string>
+    <string name="done">Save</string>
+    <string name="text_ui_mode">UI Mode</string>
+    <string name="text_share_as_text">Share as Text</string>
+    <string name="text_share_as_image">Share as Image</string>
+    <string name="share_as_pdf">Share as PDF</string>
+    <string name="text_delete">Delete</string>
+    <string name="text_share">Share</string>
+    <string name="attach_file">Attach File</string>
+    <string name="success_saved">saved successfully</string>
+    <string name="success_delete">deleted successfully!</string>
+    <string name="success_update">update successfully!</string>
+    <string name="entername">Please enter Student info!</string>
+    <string name="no_data_found">No data Found!</string>
+    <string name="tap_add_new_student">Tap the Add button to create a student</string>
+    <string name="edit">Edit</string>
+    <string name="add_student">Add Student</string>
+    <string name="update_student">Update Student</string>
+    <string name="student_stream">Student Stream</string>
+
+
+</resources>

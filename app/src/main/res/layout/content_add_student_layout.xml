@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:cardBackgroundColor="@color/colorbackground"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorcardview"
+                android:ems="10"
+                android:hint="@string/type_name"
+                android:inputType="text"
+                android:padding="@dimen/_16sdp"
+                android:textColor="@color/colortextsecond"
+                android:textColorHint="@color/hint_color"
+                android:textSize="@dimen/_16sdp" />
+
+
+            <EditText
+                android:id="@+id/etStream"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorcardview"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="@string/student_stream"
+                android:inputType="text"
+                android:padding="@dimen/_16sdp"
+                android:textColor="@color/colortextsecond"
+                android:textColorHint="@color/hint_color"
+                android:textSize="@dimen/_16sdp" />
+
+            <EditText
+                android:id="@+id/etFeedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorcardview"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="@string/type_something"
+                android:inputType="text"
+                android:padding="@dimen/_16sdp"
+                android:textColor="@color/colortextsecond"
+                android:textColorHint="@color/hint_color"
+                android:textSize="@dimen/_16sdp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
